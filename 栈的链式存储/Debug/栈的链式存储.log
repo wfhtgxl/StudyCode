@@ -1,0 +1,36 @@
+﻿  LinkStack.cpp
+E:\代码\栈的链式存储\LinkStack.h(13,2): warning C4091: “typedef ”: 没有声明变量时忽略“LinkNode”的左侧
+E:\代码\栈的链式存储\LinkStack.h(140,13): error C3861: “IsEmptyStack”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(142,6): error C3861: “pop”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(161,5): error C2065: “EleType”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(161,13): error C2146: 语法错误: 缺少“;”(在标识符“top”的前面)
+E:\代码\栈的链式存储\LinkStack.h(161,13): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(162,21): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(162,5): error C3861: “GetTop”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(164,9): error C3861: “IsEmptyStack”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(164,40): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(166,6): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(171,14): error C3861: “IsEmptyStack”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(173,7): error C3861: “pop”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(177,8): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(184,6): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(190,5): error C2065: “EleType”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(190,13): error C2146: 语法错误: 缺少“;”(在标识符“top”的前面)
+E:\代码\栈的链式存储\LinkStack.h(190,13): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(191,21): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(191,5): error C3861: “GetTop”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(193,9): error C3861: “IsEmptyStack”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(193,40): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(193,54): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(193,68): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(195,6): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(197,21): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(197,35): error C2065: “top”: 未声明的标识符
+E:\代码\栈的链式存储\LinkStack.h(200,14): error C3861: “IsEmptyStack”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(202,7): error C3861: “pop”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(206,8): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(212,6): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.h(217,5): error C3861: “push”: 找不到标识符
+E:\代码\栈的链式存储\LinkStack.cpp(8,12): error C2601: “main”: 本地函数定义是非法的
+E:\代码\栈的链式存储\LinkStack.h(84): message : 此行有一个“{”没有匹配项
+E:\代码\栈的链式存储\LinkStack.h(84): fatal error C1075: “{”: 未找到匹配令牌

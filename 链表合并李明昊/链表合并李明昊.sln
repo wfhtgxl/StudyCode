@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "链表合并李明昊", "链表合并李明昊.vcxproj", "{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Debug|x64.ActiveCfg = Debug|x64
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Debug|x64.Build.0 = Debug|x64
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Debug|x86.ActiveCfg = Debug|Win32
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Debug|x86.Build.0 = Debug|Win32
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Release|x64.ActiveCfg = Release|x64
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Release|x64.Build.0 = Release|x64
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Release|x86.ActiveCfg = Release|Win32
+		{663A8B8F-2A29-4EDB-ABB3-C34B5A2F6DCA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CE36249-371E-4490-9381-051AE0048789}
+	EndGlobalSection
+EndGlobal
