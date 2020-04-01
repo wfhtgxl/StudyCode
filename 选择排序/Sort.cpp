@@ -3,7 +3,7 @@
 #include<sys/timeb.h>
 using namespace std;
 
-#define MAX 100000
+#define MAX 5
 
 //交换函数
 void Swap(int* a, int* b) {
@@ -32,7 +32,7 @@ void BubbleSort(int arr[], int length) {
 	for (int i = 0; i < length && flag == 0; i++) {
 		flag = 1;//认为已经排序好
 		for (int j = length - 1; j > i; j--) {
-			if (arr[j - 1] < arr[j]) {
+			if (arr[j - 1] > arr[j]) {
 				flag = 0;
 				Swap(&arr[j - 1], &arr[j]);
 			}
@@ -64,12 +64,12 @@ int main() {
 		arr[i] = rand() % MAX;
 	}
 	cout << "排序前" << endl;
-	//Print(arr, MAX);
+	Print(arr, MAX);
 	long t_start = getTime();
 	BubbleSort(arr, MAX);
 	long t_end = getTime();
 	cout << "排序后" << endl;
-	//Print(arr, MAX);
+	Print(arr, MAX);
 	cout << "冒泡时间：" << t_end - t_start<<endl;
 	cout << "——————————————————————————————————————————" << endl;
 	int arr_Select[MAX];
@@ -78,12 +78,12 @@ int main() {
 		arr_Select[i] = rand() % MAX;
 	}
 	cout << "排序前" << endl;
-	//Print(arr, MAX);
+	Print(arr, MAX);
 	long t_start_Select = getTime();
 	SelectSort(arr_Select, MAX);
 	long t_end_Select = getTime();
 	cout << "排序后" << endl;
-	//Print(arr_Select, MAX);
+	Print(arr_Select, MAX);
 	cout << "选择排序时间：" << t_end_Select - t_start_Select;
 	return 0;
 }
