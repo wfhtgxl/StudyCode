@@ -25,7 +25,7 @@ void Print(int arr[], int length) {
 	}
 }
 int flag = 0;//标识没排序好
-//冒泡
+//冒泡改良版
 void BubbleSort(int arr[], int length) {
 	for (int i = 0; i < length && flag ==0; i++) {
 		flag = 1;//认为已经排序好
@@ -44,12 +44,12 @@ int main() {
 	for (int i = 0; i < MAX; i++) {
 		arr[i] = rand() % MAX;
 	}
-	cout << "排序前-----------------------------------------------" << endl;
+	cout << "排序前" << endl;
 	Print(arr, MAX);
 	long t_start = getTime();
 	BubbleSort(arr, MAX);
 	long t_end = getTime();
-	cout << "排序后-----------------------------------------------" << endl;
+	cout << "排序后" << endl;
 	Print(arr, MAX);
 	cout << "冒泡时间：" << t_end - t_start;
 	return 0;
