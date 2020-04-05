@@ -3,7 +3,7 @@
 #include<sys/timeb.h>
 using namespace std;
 
-#define MAX 10000 
+#define MAX 10
 //交换函数
 void Swap(int* a, int* b) {
 	int temp = *a;
@@ -25,7 +25,7 @@ void Print(int arr[], int length) {
 	}
 }
 int flag = 0;//标识没排序好
-//冒泡改良版
+//冒泡改良版  后序遍历 从后往前遍历 找最小值 先把第一位排好
 void BubbleSort(int arr[], int length) {
 	for (int i = 0; i < length && flag ==0; i++) {
 		flag = 1;//认为已经排序好
@@ -37,6 +37,15 @@ void BubbleSort(int arr[], int length) {
 		}
 	}
 }
+//冒泡排序 前序遍历 从前往后两两遍历 找最大值 先把最大值（最后一位）排好
+void BubbleSort_befor(int arr[], int length) {
+	for (int i = 0; i < length; i++) {
+		for (int j = 0; j < length - 1; j++) {
+			if (arr[j] > arr[j + 1]) Swap(&arr[j], &arr[j + 1]);
+		}
+	}
+
+}
 
 int main() {
 	int arr[MAX];
@@ -47,7 +56,8 @@ int main() {
 	cout << "排序前" << endl;
 	Print(arr, MAX);
 	long t_start = getTime();
-	BubbleSort(arr, MAX);
+	BubbleSort_befor(arr, MAX);//前序排
+	//BubbleSort(arr, MAX);
 	long t_end = getTime();
 	cout << "排序后" << endl;
 	Print(arr, MAX);
