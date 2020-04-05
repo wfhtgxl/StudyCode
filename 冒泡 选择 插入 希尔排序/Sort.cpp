@@ -3,7 +3,7 @@
 #include<sys/timeb.h>
 using namespace std;
 
-#define MAX 10
+#define MAX 5
 
 //交换函数
 void Swap(int* a, int* b) {
@@ -72,33 +72,65 @@ void InsertSort(int arr[], int length) {//插入排序是将无序的数列插入到有序的数列
 	}
 }
 
+//希尔排序???
+void ShellSort(int arr[], int length) {
+	int increasement = length;
+	int j, k;
+
+	do {//先执行后判断
+	 increasement = length/3 + 1;
+		for (int i = 0; i < increasement; i++) {
+			
+			for (j = i + increasement; j < length; j += increasement) {
+				if (arr[j] < arr[j - increasement]) {
+					int temp = arr[j];
+					for (k = j - increasement; j >= 0 && temp < arr[k]; k-= increasement) {
+						arr[k + increasement] = arr[k];
+					}
+					arr[k + increasement] = temp;
+				}
+			}
+		}
+	} while (increasement > 1);
+
+}
+
 int main() {
+	//int arr[MAX];
+	//srand((unsigned int)time(NULL));//如何获得多个随机数组
+	//for (int i = 0; i < MAX; i++) {
+	//	arr[i] = rand() % MAX;
+	//}
+	//cout << "排序前" << endl;
+	//Print(arr, MAX);
+	//long t_start = getTime();
+	//BubbleSort(arr, MAX);
+	//long t_end = getTime();
+	//cout << "排序后" << endl;
+	//Print(arr, MAX);
+	//cout << "冒泡时间：" << t_end - t_start<<endl;
+	//cout << "——————————————————————————————————————————" << endl;
+	//int arr_Select[MAX];
+	//srand((unsigned int)time(NULL));
+	//for (int i = 0; i < MAX; i++) {
+	//	arr_Select[i] = rand() % MAX;
+	//}
+	//cout << "排序前" << endl;
+	//Print(arr_Select, MAX);
+	//long t_start_Select = getTime();
+	//InsertSort(arr_Select, MAX);
+	//long t_end_Select = getTime();
+	//cout << "排序后" << endl;
+	//Print(arr_Select, MAX);
+	//cout << "选择排序时间：" << t_end_Select - t_start_Select;
+
 	int arr[MAX];
 	srand((unsigned int)time(NULL));//如何获得多个随机数组
 	for (int i = 0; i < MAX; i++) {
 		arr[i] = rand() % MAX;
 	}
-	cout << "排序前" << endl;
 	Print(arr, MAX);
-	long t_start = getTime();
-	BubbleSort(arr, MAX);
-	long t_end = getTime();
-	cout << "排序后" << endl;
+	ShellSort(arr, MAX);
 	Print(arr, MAX);
-	cout << "冒泡时间：" << t_end - t_start<<endl;
-	cout << "——————————————————————————————————————————" << endl;
-	int arr_Select[MAX];
-	srand((unsigned int)time(NULL));
-	for (int i = 0; i < MAX; i++) {
-		arr_Select[i] = rand() % MAX;
-	}
-	cout << "排序前" << endl;
-	Print(arr_Select, MAX);
-	long t_start_Select = getTime();
-	InsertSort(arr_Select, MAX);
-	long t_end_Select = getTime();
-	cout << "排序后" << endl;
-	Print(arr_Select, MAX);
-	cout << "选择排序时间：" << t_end_Select - t_start_Select;
 	return 0;
 }
